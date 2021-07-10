@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Sports Magazine</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="../index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="#">Sports</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          <a href="../index.html">Ravel</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../imgs/images/volleyballsports.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="../imgs/" alt="">
+            </div>
+
+            <div class="subtitle">Volleyball Sports and Highlights.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../imgs/images/programmingsports.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">Programming Esports and Hackathon</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../imgs/images/baseballsports.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">RavelMagazines features authentic and down-to earth content just for you.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../imgs/images/eatingsports.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">We know you love eating. We make eating a sport so you don't have to be guilty anymore!</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../imgs/images/hackingsports.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">Online and Offline.. We got computer hacking sports just for you.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../imgs/images/pbasports.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+
+            </div>
+
+            <div class="subtitle">Everyone loves basketball.. why not make it local and down to you?</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../imgs/images/man_running.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">We Got the famouse runner bolt for you. Divulge on It!</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../imgs/images/esports.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">You love gaming? We love pros. We got them for you!. Only need to watch and enjoy!</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../imgs/images/takewondo.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+
+            </div>
+
+            <div class="subtitle">Personally, I love takewondo, Competitve Fighting Brings my blood up!</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../imgs/images/travel.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">And... We got travelling as well! Travel all you like on your home, we bring the experience to you 100%!</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../imgs/images/healthandfitness.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">For every subscribe, we share food to others who need them...</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../imgs/images/beauty.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">Oh wait... we also got fashion, 17 years old females going into the target boom!</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>

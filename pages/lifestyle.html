@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ravel's Lifestyle Section</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+       box-sizing: border-box;
+    }
+    body {
+        margin:0;
+        background-color: #f3eee7;
+        animation-name: fade;
+        animation-duration: 3s;
+    }
+    @keyframes fade {
+        from {opacity:0.1;}
+        to {opacity:4;}
+    }
+    /* Style the header */
+    .header {
+        padding: 20px;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    /* Create three equal columns that floats next to each other */
+    .column {
+        float:left;
+        width:33.33%;
+        padding:20px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content:"";
+        display: table;
+        clear:both;
+    }
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+        }
+    }
+    </style>
+    </head>
+    <body>
+        <div class="header" style="font-family: Savoy; font-size: 30px; font-weight: 400;">
+            <h1>Lifestyle</h1>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <h2>Self-care</h2>
+                <a href="https://www.verywellmind.com/self-care-strategies-overall-stress-reduction-3144729"><img src="../imgs/images/self-care.jpg" hspace="20px" width="560" height="346" alt="Girl in the shower"></a>
+                <br>
+                <br>
+                <br>
+                <h2>Health & Fitness</h2>
+                <a href="https://www.mana.md/the-importance-of-physical-fitness/"><img src="../imgs/images/healthandfitness.jpg" hspace="20px" width="560" height="346"/></a>
+            </div>
+            <div class="column">    
+                <h2>Fashion</h2>
+                <a href="https://www.vogue.com/fashion"><img src="../imgs/images/fashion.jpg" hspace="20px" width="540" height="765" alt="Woman in Fashion"/></a>
+            </div>
+            <div class="column">
+                <h2>Food</h2>
+                <a href="https://www.foodpanda.ph/restaurants/new?lat=10.29523515&lng=123.88676722&vertical=shop"><img src="../imgs/images/food.jpg" hspace="20px" width="560" height="346"/></a>
+                <br>
+                <br>
+                <br>
+                <h2>Travel</h2>
+                <a href="https://www.aman.com/resorts/amanpulo"><img src="../imgs/images/travel.jpg" hspace="20px" width="540" height="346"/></a>
+            </div>
+        </div>
+    </body>
+    </html>
