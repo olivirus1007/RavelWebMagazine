@@ -1,5 +1,5 @@
 # RavelWebMagazine
 
-##Ravel Web Magazine App
+## vel Web Magazine App
 
--Ths is a markdown!
+- Ths is a markdown!
